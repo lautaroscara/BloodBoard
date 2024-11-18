@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &317555414348668573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4414030232650399189}
+  - component: {fileID: 5112937727579890458}
+  - component: {fileID: 8572040964534669506}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4414030232650399189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317555414348668573}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5112937727579890458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317555414348668573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda62cf988e282647804affe814a8b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 20
+  rows: 10
+  player: {fileID: 4384961800877313973, guid: 5ab3b8956aed73b49ac25110206ce7e3, type: 3}
+  exit: {fileID: 1835357471334794109, guid: 589cb298588eb3149a98ad667009cc74, type: 3}
+  floorTiles:
+  - {fileID: 2265802885762229829, guid: 482a43b40e7183844a74da5b4392b2de, type: 3}
+  wallTiles:
+  - {fileID: 6210257054673327206, guid: 1f7655e431b1d184b998a0c4e8713746, type: 3}
+  cornerTiles:
+  - {fileID: 3987620762427918072, guid: c7a97be98fabf9c4abe6f8e766c0a13d, type: 3}
+  - {fileID: 3987620762427918072, guid: c5eaf6c45856ce64e975c0ae975767f7, type: 3}
+  - {fileID: 3987620762427918072, guid: 32455c4183305ff439b296c5f90d8370, type: 3}
+  - {fileID: 3987620762427918072, guid: bf720b34208a6c1439e19a13d59dcb06, type: 3}
+  enemyTiles:
+  - {fileID: 6117426991513407284, guid: 6ec52432d6574b84eb4546a082e5c3a7, type: 3}
+  outerWallTiles:
+  - {fileID: 3186983651043254384, guid: cc30eb27c630588468c1e2c88a272a55, type: 3}
+  - {fileID: 6123926654124057466, guid: 59490f687ba9c684faba0e5c327f422d, type: 3}
+  - {fileID: 805834073220519884, guid: fb15328b2de81294b96a241207a552d4, type: 3}
+  - {fileID: 4317565542986178859, guid: 60575de1b7f8b894888ab84a8e60d274, type: 3}
+  - {fileID: 6919127740374879244, guid: d17121d9bc4506d49aafa6b0cb1d1473, type: 3}
+  - {fileID: 1155492951665130351, guid: 78e07779a9f82b943b085d584966983c, type: 3}
+  - {fileID: 5408257227063695923, guid: 36dfd514e0ec28c41929063dfd8666ff, type: 3}
+  - {fileID: 830775336559226567, guid: c484ed8bc907e0a4e9684f0acd506729, type: 3}
+  - {fileID: 5916469083157097970, guid: 6009695f19089154e93f1756ec03392a, type: 3}
+  - {fileID: 988707458481516043, guid: e16d9c60afae96b45bb2ce0f9ad38246, type: 3}
+  - {fileID: 8385440801318278735, guid: 931cc5dd532eeed4c99a27357b1a6ac7, type: 3}
+  enemyEnabled: 1
+  merch: {fileID: 8430418136694929737, guid: 1e2d6b05c6afb8c4f8fcec5f39c49ab8, type: 3}
+  enemysInstantiated: 0
+--- !u!114 &8572040964534669506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317555414348668573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f072f941051c745afe8f522a6dd8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 1
+  merch: {fileID: 8430418136694929737, guid: 1e2d6b05c6afb8c4f8fcec5f39c49ab8, type: 3}
